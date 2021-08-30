@@ -1,0 +1,40 @@
+@import "vars";
+//@import "fonts";
+@import "reset";
+//@import "libs";
+@import "global";
+
+.header {
+  background-color: #fff;
+  padding: 21px 0px 16px;
+  margin-bottom: 30px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    display: flex;
+  }
+  &__item + .header__item {
+    margin-left: 30px;
+  }
+}
+.stories {
+  text-align: center;
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #c4c4c4;
+    padding: 31px 0px 28px;
+  }
+  &__images {
+    margin-bottom: 4px;
+  }
+  &__span {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: $primaryText;
+  }
+}
+//@import "media";
